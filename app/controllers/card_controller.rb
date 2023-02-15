@@ -1,5 +1,5 @@
 class CardController < ApplicationController
-  # before_action :set_card, only: [:show, :edit, :update, :destroy]
+  before_action :set_card, only: [:show, :edit, :update]
 
   def new
     @card = Card.new
@@ -15,20 +15,20 @@ class CardController < ApplicationController
     end
   end
 
-  # def show
-  # end
+  def show
+  end
 
-  # def edit
-  #   @lists = List.all
-  # end
+  def edit
+    @lists = List.all
+  end
 
-  # def update
-  #   if @card.update(card_params)
-  #     redirect_to ("/top/index")
-  #   else
-  #     render :edit
-  #   end
-  # end
+  def update
+    if @card.update(card_params)
+      redirect_to ("/top/index")
+    else
+      render :edit
+    end
+  end
 
   # def destroy
   #   @card.destroy
@@ -40,7 +40,7 @@ class CardController < ApplicationController
       params.require(:card).permit(:title, :memo, :list_id)
     end
 
-  # def set_card
-  #   @card = Card.find(params[:id])
-  # end
+  def set_card
+    @card = Card.find(params[:id])
+  end
 end

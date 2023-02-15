@@ -1,16 +1,17 @@
 .account-page {
   height: 100vh;
   width: 100vw;
-  padding: 14vh 15vw;
+  padding: 10vh 15vw;
   background-color: rgb(207, 202, 202);
 }
 
 .account-page__inner {
   padding: 60px;
+  margin: auto;
   background-color: gray;
   border: 10px solid black;
   border-radius: 20px;
-  height: calc(76vh);
+  height: calc(63vh);
   width: 70vw;
   overflow: scroll;
 }
