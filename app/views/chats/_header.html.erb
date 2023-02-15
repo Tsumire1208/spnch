@@ -34,8 +34,8 @@
         <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
           <img src="<%= "/images/SPN-ch2.jpg "%>", width="70" height="70" role="img">
           &emsp;<img src="<%= "/images/SPN-ch_logo.PNG "%>", width="250" height="60" role="img">
-
         </a>
+
           <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
             &emsp;&nbsp;
               <li class="nav-link text-white">
@@ -47,17 +47,17 @@
                 Todoリスト作成
                 <% end %>
               </li>
-            &emsp;&nbsp;
-            <li>
-              <a class="nav-link text-white">
+
+              <li class="nav-link text-white">
+              <%= link_to new_room_path, :style=>"color:#fff; text-decoration: none;" do%>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi d-block mx-auto mb-1" viewBox="0 0 16 16">
                   <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                   <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                 </svg>
-                <%# <%= link_to "チャットルーム作成", new_room_path, :style=>"color:#fff; text-decoration: none;" %> %>
-              </a>
+                チャットルーム作成
+              <% end %>
             </li>
-            &emsp;&nbsp;
+
               <li class="nav-link text-white">
                 <%= link_to edit_user_path(current_user), :style=>"color:#fff; text-decoration: none;" do %>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi d-block mx-auto mb-1" viewBox="0 0 16 16">
@@ -68,6 +68,7 @@
               <% end %>
             </li>
           </ul>
+
         </div>
       </div>
     </div>
