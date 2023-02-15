@@ -12,7 +12,7 @@
   </head>
 
   <body>
-  <%# <%= render "header" if current_user%> %>
+  <%= render "chats/header" if current_user %>
 
   <% if flash[:notice] %>
       <div class="alert alert-info">

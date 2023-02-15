@@ -58,15 +58,14 @@
               </a>
             </li>
             &emsp;&nbsp;
-            <li>
-              <a class="nav-link text-white">
+              <li class="nav-link text-white">
+                <%= link_to edit_user_path(current_user), :style=>"color:#fff; text-decoration: none;" do %>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi d-block mx-auto mb-1" viewBox="0 0 16 16">
                   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                   <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                 </svg>
-                 <%# <%= link_to current_user.name, edit_user_path(current_user), :style=>"color:#fff; text-decoration: none;" %> %>
-
-                </a>
+                <%= current_user.name%>さん
+              <% end %>
             </li>
           </ul>
         </div>
@@ -79,7 +78,7 @@
         </form>
 
         <div class="text-end">
-          <%# <%= link_to 'ログアウト', destroy_user_session_path, method: :delete,  class: 'btn btn-default'%> %>
+          <%= link_to 'ログアウト', destroy_user_session_path, method: :delete,  class: 'btn btn-secondary' %>
         </div>
       </div>
     </div>
