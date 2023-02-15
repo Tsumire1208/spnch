@@ -6,13 +6,13 @@
   </div>
     <div class="chats-right-header">
       <div class="chats-header-button">
-        <%# <%= button_to "チャットを終了する", room_path(@room), method: :delete %> %>
+        <%= button_to "チャットを終了する", room_path(@room), method: :delete, data: { confirm: "このチャットルームを閉じてよろしいですか?" } %>
       </div>
     </div>
 </div>
 
 <div class="messages">
-<%# <%= render partial: 'chat', collection: @chats %> %>
+<%= render partial: 'chat', collection: @chats %>
 </div>
 
 <%= form_with model: [@room, @chat], class: 'form', local: true do |f| %>
