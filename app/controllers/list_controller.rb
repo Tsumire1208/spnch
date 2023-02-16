@@ -9,6 +9,7 @@ class ListController < ApplicationController
     if @list.save
       redirect_to ("/top/index")
     else
+      @list.valid?
       render :new
     end
   end
@@ -20,6 +21,7 @@ class ListController < ApplicationController
     if @list.update(list_params)
       redirect_to ("/top/index")
     else
+      @list.valid?
       render :edit
     end
   end

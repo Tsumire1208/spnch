@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション名
+SPN-ch  
 
-Things you may want to cover:
 
-* Ruby version
+# アプリケーション概要	
+アプリ内でTodoリストにてタスク・スケジュールの管理及び、チャットにてメンバーとのコミュニケーションの最適化。
 
-* System dependencies
+# URL
+https://spn-ch.onrender.com
 
-* Configuration
+# テスト用アカウント
+・basic認証ID：Nishi  
+・basic認証パスワード：1qaz2wsx  
+・メールアドレス①eeeee@eeeee  
+・パスワード①1qaz2wsx  
+・メールアドレス②12345@12345  
+・パスワード②1qaz2wsx  
 
-* Database creation
 
-* Database initialization
+# 利用方法
 
-* How to run the test suite
+## チャット機能
+1.ヘッダーにある『チャットルーム作成』ボタンを押下し、遷移後のページにてルーム名・チャットメンバーを決定、作成する。  
+2.作成後、遷移したトップページサイドバーの新規作成されたチャットを押下。メインページがチャットページに切り替わる。  
+3.切り替わったチャット画面下にチャットのフォームがある為、メッセージ及び画像を送信する。（メッセージ、画像いずれかが入力されていれば送信できる。）  
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

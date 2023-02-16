@@ -1,9 +1,11 @@
 class CardController < ApplicationController
   before_action :set_card, only: [:show, :edit, :update, :destroy]
+  before_action :set_all, only: [:show, :edit, :update]
+  before_action :set_list, only: [:new, :edit]
+
 
   def new
     @card = Card.new
-    @list = List.find(params[:list_id])
   end
 
   def create
@@ -11,6 +13,7 @@ class CardController < ApplicationController
     if @card.save
       redirect_to ("/top/index")
     else
+      @list = List.find params[:list_id]
       render :new
     end
   end
@@ -19,13 +22,13 @@ class CardController < ApplicationController
   end
 
   def edit
-    @lists = List.all
   end
 
   def update
     if @card.update(card_params)
       redirect_to ("/top/index")
     else
+      @card.valid?
       render :edit
     end
   end
@@ -42,5 +45,13 @@ class CardController < ApplicationController
 
   def set_card
     @card = Card.find(params[:id])
+  end
+
+  def set_list
+    @list = List.find(params[:list_id])
+  end
+
+  def set_all
+    @lists = List.all
   end
 end
