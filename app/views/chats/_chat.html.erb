@@ -4,7 +4,7 @@
       <div class="message-content">
         <%= chat.content %>
       </div>
-    <%# <%= image_tag chat.image.variant(resize: '400x400'), class: 'chat-image' if chat.image.attached? %> %>
+    <%= image_tag chat.image.variant(resize: '400x400'), class: 'chat-image' if chat.image.attached? %>
     </div>
     <div class="lower-message">
       <div class="message-user">
@@ -21,7 +21,7 @@
       <div class="message-content">
         <%= chat.content %>
       </div>
-    <%# <%= image_tag chat.image.variant(resize: '400x400'), class: 'chat-image' if chat.image.attached? %> %>
+    <%= image_tag chat.image.variant(resize: '400x400'), class: 'chat-image' if chat.image.attached? %>
     </div>
     <div class="lower-message">
       <div class="message-user">
