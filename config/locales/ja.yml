@@ -1,6 +1,8 @@
 ja:
   activerecord:
     attributes:
+      room:
+        name: "タイトル"
       user:
         name: "名前"
         password: "パスワード"
@@ -26,8 +28,17 @@ ja:
         unconfirmed_email: 未確認Eメール
         unlock_token: ロック解除用トークン
         updated_at: 更新日
+      chat:
+        content: "メッセージ"
+        image: "画像"
+        user: "ユーザー情報"
+        room: "ルーム情報"
+      card:
+        title: "タイトル"
+        memo: "メモ内容"
+        list: "リスト情報"
     models:
-      user: ユーザ
+      user: ユーザー
   devise:
     confirmations:
       confirmed: メールアドレスが確認できました。

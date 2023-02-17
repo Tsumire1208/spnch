@@ -14,6 +14,7 @@ class CardController < ApplicationController
       redirect_to ("/top/index")
     else
       @list = List.find params[:list_id]
+      @card.valid?
       render :new
     end
   end
