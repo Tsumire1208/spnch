@@ -5,7 +5,6 @@
 .list-group {
   height: calc(44vh - 100px);
   overflow: scroll;
-
 }
 
 .chat {
@@ -24,18 +23,6 @@
   font-size: 3.5vh;
 }
 
-.chats-header-button {
-  height: 3vh;
-}
-
-.chats-header-button a {
-  height: 3vh;
-  text-decoration: none;
-  border: 1px solid darkred;
-  color: darkred;
-  padding: 7px;
-}
-
 .messages {
   width: 75vw;
   height: calc(79.5vh - 100px);
@@ -47,71 +34,66 @@
 .message {
   position: relative;
   background: #8bf246;
-  width: fit-content; /*吹き出し幅*/
-  padding: 20px; /*内側の余白*/
-  border-radius: 10px; /*角の丸み*/
-  margin: 5px 30px 5px auto; /*右寄せ*/
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 5px 30px 5px auto;
   width: 30vw;
 }
-
 .message::after {
-  position: absolute; /*絶対配置*/
-  content: ''; /*空に*/
-  border-top: 20px solid transparent; /*三角を作る*/
+  position: absolute;
+  content: '';
+  border-top: 20px solid transparent;
   border-left: 20px solid #8bf246;
   border-bottom: 20px solid transparent;
   top: 10%;
-  right: -15px; /*三角を右に突き出す*/
+  right: -15px;
 }
 /* ログインアカウントコメント */
-
 /* 別アカウントコメント */
 .other_message {
   position: relative;
   background: #EFEFEF;
-  width: fit-content; /*吹き出し幅*/
-  padding: 20px; /*内側の余白*/
-  border-radius: 10px; /*角の丸み*/
-  margin: 5px auto 5px 30px; /*左寄せ*/
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 5px auto 5px 30px;
   width: 30vw;
 }
 .other_message::after {
-  position: absolute; /*絶対配置*/
-  content: ''; /*空に*/
-  border-top: 20px solid transparent; /*三角を作る*/
+  position: absolute;
+  content: '';
+  border-top: 20px solid transparent;
   border-right: 20px solid #EFEFEF;
   border-bottom: 20px solid transparent;
   top: 10%;
-  left: -15px; /*三角を左に突き出す*/
+  left: -15px;
 }
 /* 別アカウントコメント */
-
-
 .upper-message{
   margin-top: 10px;
 
 }
-
 .message-user {
   color: #434a54;
   font-size: 12px;
 }
-
 .message-date {
   color: #999;
   font-size: 12px;
   padding-left: 10px;
 }
-
 .lower-message {
   display: flex;
 
 }
-
 .message-content {
   color: #434a54;
   font-size: 16px;
   margin-bottom: 40px;
+}
+.chat-image {
+  width:100%;
 }
 
 .form {
@@ -159,10 +141,4 @@
 
 .hidden {
   display: none;
-}
-
-.nav-link text-white {
-  text-decoration: none;
-  color: white ; 
-
 }

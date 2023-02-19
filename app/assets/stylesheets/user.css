@@ -6,66 +6,32 @@
 }
 
 .account-page__inner {
-  padding: 60px;
+  padding: 5%;
   margin: auto;
   background-color: gray;
   border: 10px solid black;
   border-radius: 20px;
-  height: calc(63vh);
+  height: 65vh;
   width: 70vw;
   overflow: scroll;
 }
-.account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
+.account-page__inner_registrations {
+  padding: 5%;
+  margin: auto;
+  background-color: gray;
+  border: 10px solid black;
+  border-radius: 20px;
+  height: 85vh;
+  width: 70vw;
+  overflow: scroll;
+}
+.account-page__inner--left, .account-page__inner--right {
   float: left;
   width: 50%;
 }
-.account-page .account-page__inner:after {
-  clear: both;
-  content: "";
-  display: block;
-}
-.account-page .account-page__header h2 {
-  margin-bottom: 10px;
-  letter-spacing: 3px;
-  font-size: 40px;
-  font-weight: 200;
-}
-.account-page .account-page__header h2:after {
-  content: "";
-  display: block;
-  width: 60px;
-  margin-top: 5px;
-  border-bottom: 1px solid #38aef0;
-}
-.account-page .account-page__header h5 {
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-weight: 200;
-}
-.account-page .account-page__header .btn {
-  margin-top: 20px;
-  color: #fff;
-  background-color: #ccc;
-  font-size: 14px;
-}
-.account-page .field {
-  margin-bottom: 10px;
-}
-.account-page .field .field-label {
-  padding: 10px 0;
-  letter-spacing: 1px;
-  font-size: 17px;
-  font-weight: 700;
-}
-.account-page .field .field-label i {
-  font-size: 15px;
-  font-weight: 400 ;
-}
-.account-page .field .field-input input {
-  width: 100%;
-  padding: 10px;
-  letter-spacing: 1px;
-  border-radius: 10px;
+
+.account-page__header h1 {
+  text-align: left;
 }
 .account-page .btn {
   display: inline-block;
@@ -74,9 +40,31 @@
   line-height: 50px;
   letter-spacing: 1px;
   text-align: center;
-  border: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #ccc;
+  font-size: 14px;
+}
+
+.field {
+  margin: 7% 0;
+}
+.field-label {
+  padding: 1% 0;
+  letter-spacing: 1%;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.field-input input {
+  width: 100%;
+  padding: 12px;
+  letter-spacing: 1%;
   border-radius: 10px;
 }
+
 .account-page input[type=submit] {
   float: left;
   margin-top: 20px;
@@ -116,17 +104,41 @@
   color: #9d1a06;
   font-size: 14px;
 }
-#error_explanation ul {
-  margin: 0;
-  padding-left: 17px;
-  list-style: square;
-}
-#error_explanation li {
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
-}
 
-.gazou {
-  border-radius: 50%;
+.account-page_edit {
+  height: 81vh;
+  width: 100vw;
+  padding: 10vh 15vw;
+  background-color: rgb(207, 202, 202);
+}
+.account-page__inner_clearfix {
+  padding: 5%;
+  margin: auto;
+  background-color: gray;
+  border: 10px solid black;
+  border-radius: 20px;
+  height: 60vh;
+  width: 70vw;
+  overflow: scroll;
+}
+.account-page_edit .btn {
+  display: inline-block;
+  height: 50px;
+  padding: 0 30px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #ccc;
+  font-size: 14px;
+}
+.account-page_edit input[type=submit] {
+  float: left;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #38aef0;
+  border: 2px solid black;
 }
