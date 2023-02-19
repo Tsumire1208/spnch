@@ -33,6 +33,8 @@ ja:
         image: "画像"
         user: "ユーザー情報"
         room: "ルーム情報"
+      list:
+        title: "タイトル"
       card:
         title: "タイトル"
         memo: "メモ内容"
